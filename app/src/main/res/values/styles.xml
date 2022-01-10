@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

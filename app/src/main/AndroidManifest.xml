@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.permission.CALL_PHONE" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait"
+        tools:targetApi="m"
+        tools:ignore="AllowBackup">
+
+        <!-- splash activity -->
+        <activity
+            android:name="com.example.app.SplashActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- main activity -->
+        <activity
+            android:name="com.example.app.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+
+    </application>
+
+</manifest>
