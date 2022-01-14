@@ -7,7 +7,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
-    <uses-feature android:name="android.permission.CALL_PHONE" android:required="false" />
+    <uses-feature android:name="android.permission.CALL_PHONE" android:required="false"
+        tools:ignore="UnusedAttribute" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +25,8 @@
         <activity
             android:name="com.example.app.SplashActivity"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity">
+            tools:ignore="LockedOrientationActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
